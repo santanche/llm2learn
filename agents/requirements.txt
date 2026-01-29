@@ -1,0 +1,23 @@
+# Core dependencies
+langchain==0.1.0
+langchain-community==0.0.13
+sqlparse==0.4.4
+requests==2.31.0
+
+# LLM Backend Options (students pick one)
+# Option 1: Ollama (recommended)
+ollama==0.1.6
+
+# Option 2: LM Studio / OpenAI-compatible
+langchain-openai==0.0.2
+openai==1.6.1
+
+# Option 3: Direct llama.cpp
+llama-cpp-python==0.2.27
+
+# Utilities
+python-dotenv==1.0.0
+pydantic==2.5.3
+
+# Optional: Better visualization
+rich==13.7.0
