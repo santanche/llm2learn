@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clinical NER Comparison</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    textarea, input, select { width: 100%; margin: 5px 0; }
+    button { padding: 10px; margin-top: 10px; }
+    .box { border: 1px solid #ccc; padding: 10px; margin-top: 10px; }
+    pre { background: #f5f5f5; padding: 10px; }
+  </style>
+</head>
+<body>
+
+<h2>Clinical NER Comparison</h2>
+
+<label>Predefined examples:</label>
+<select id="examples">
+  <option value="">-- select an example --</option>
+  <option>The patient has a cold and mild fever.</option>
+  <option>The room was cold overnight.</option>
+  <option>She has a history of depression.</option>
+  <option>The road has a depression near the bridge.</option>
+  <option>The patient was admitted after a fall.</option>
+  <option>The fall semester begins next week.</option>
+</select>
+
+<label>Input text:</label>
+<textarea id="text" rows="3"></textarea>
+
+<label>Prototype words (comma-separated):</label>
+<input id="prototypes" value="cold, depression, fall, stroke, shock, diabetes, metformin">
+
+<button onclick="runNER()">Execute</button>
+
+<div class="box">
+  <h3>Pipeline 1 — Fine-tuned Clinical BERT</h3>
+  <pre id="p1"></pre>
+</div>
+
+<div class="box">
+  <h3>Pipeline 2 — Vanilla BERT + similarity</h3>
+  <pre id="p2"></pre>
+</div>
+
+<div class="box">
+  <h3>Pipeline 3 — Word2Vec + similarity</h3>
+  <pre id="p3"></pre>
+</div>
+
+<div class="box">
+  <h3>Log</h3>
+  <pre id="log"></pre>
+</div>
+
+<script>
+document.getElementById("examples").addEventListener("change", function() {
+  document.getElementById("text").value = this.value;
+});
+
+async function runNER() {
+  const text = document.getElementById("text").value;
+  const prototypes = document.getElementById("prototypes").value.split(",");
+
+  document.getElementById("log").textContent = "Calling backend...";
+
+  const response = await fetch("/run", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ text, prototypes })
+  });
+
+  const data = await response.json();
+
+  document.getElementById("p1").textContent = JSON.stringify(data.pipeline_1, null, 2);
+  document.getElementById("p2").textContent = JSON.stringify(data.pipeline_2, null, 2);
+  document.getElementById("p3").textContent = JSON.stringify(data.pipeline_3, null, 2);
+  document.getElementById("log").textContent = data.log.join("\n");
+}
+</script>
+
+</body>
+</html>

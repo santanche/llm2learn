@@ -1,0 +1,14 @@
+# Core ML / NLP
+torch>=2.0
+transformers>=4.36
+scikit-learn>=1.3
+numpy>=1.24
+
+# Static embeddings
+gensim>=4.3
+
+# Tokenization
+nltk>=3.8
+
+# Hugging Face utilities (model downloads, caching)
+huggingface-hub>=0.20
