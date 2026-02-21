@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-02-21T13:15:47.134Z",
+  "userQuestion": "",
+  "dataSources": [
+    {
+      "label": "DuckDB",
+      "content": "{\n  \"columns\": [\n    \"database_name\",\n    \"database_oid\",\n    \"schema_name\",\n    \"schema_oid\",\n    \"table_name\",\n    \"table_oid\",\n    \"comment\",\n    \"tags\",\n    \"internal\",\n    \"temporary\",\n    \"has_primary_key\",\n    \"estimated_size\",\n    \"column_count\",\n    \"index_count\",\n    \"check_constraint_count\",\n    \"sql\"\n  ],\n  \"rows\": [\n    [\n      \"medical\",\n      592,\n      \"main\",\n      590,\n      \"disease\",\n      2008,\n      null,\n      {},\n      false,\n      false,\n      true,\n      156,\n      2,\n      2,\n      0,\n      \"CREATE TABLE disease(disease_id INTEGER DEFAULT(nextval('disease_seq')) PRIMARY KEY, \\\"name\\\" VARCHAR UNIQUE);\"\n    ],\n    [\n      \"medical\",\n      592,\n      \"main\",\n      590,\n      \"disease_embedding\",\n      2034,\n      null,\n      {},\n      false,\n      false,\n      false,\n      156,\n      2,\n      0,\n      0,\n      \"CREATE TABLE disease_embedding(disease_id INTEGER, embedding DOUBLE[]);\"\n    ],\n    [\n      \"medical\",\n      592,\n      \"main\",\n      590,\n      \"disease_symptom\",\n      2028,\n      null,\n      {},\n      false,\n      false,\n      true,\n      3709,\n      3,\n      1,\n      0,\n      \"CREATE TABLE disease_symptom(disease_id INTEGER, symptom_id INTEGER, incidence FLOAT, PRIMARY KEY(disease_id, symptom_id));\"\n    ],\n    [\n      \"medical\",\n      592,\n      \"main\",\n      590,\n      \"symptom\",\n      2018,\n      null,\n      {},\n      false,\n      false,\n      true,\n      330,\n      2,\n      2,\n      0,\n      \"CREATE TABLE symptom(symptom_id INTEGER DEFAULT(nextval('symptom_seq')) PRIMARY KEY, \\\"name\\\" VARCHAR UNIQUE);\"\n    ]\n  ],\n  \"row_count\": 4\n}",
+      "subscribeTopic": "DUCKDB_TABLES"
+    }
+  ],
+  "agents": [
+    {
+      "title": "Agent 1",
+      "prompt": "SELECT * FROM duckdb_tables();",
+      "model": "SQL",
+      "subscribeTopic": "START",
+      "publishTopic": "DUCKDB_TABLES",
+      "showResult": true
+    }
+  ],
+  "results": {
+    "finalResult": "--- Agent 1 ---\n\n{\n  \"columns\": [\n    \"database_name\",\n    \"database_oid\",\n    \"schema_name\",\n    \"schema_oid\",\n    \"table_name\",\n    \"table_oid\",\n    \"comment\",\n    \"tags\",\n    \"internal\",\n    \"temporary\",\n    \"has_primary_key\",\n    \"estimated_size\",\n    \"column_count\",\n    \"index_count\",\n    \"check_constraint_count\",\n    \"sql\"\n  ],\n  \"rows\": [\n    [\n      \"medical\",\n      592,\n      \"main\",\n      590,\n      \"disease\",\n      2008,\n      null,\n      {},\n      false,\n      false,\n      true,\n      156,\n      2,\n      2,\n      0,\n      \"CREATE TABLE disease(disease_id INTEGER DEFAULT(nextval('disease_seq')) PRIMARY KEY, \\\"name\\\" VARCHAR UNIQUE);\"\n    ],\n    [\n      \"medical\",\n      592,\n      \"main\",\n      590,\n      \"disease_embedding\",\n      2034,\n      null,\n      {},\n      false,\n      false,\n      false,\n      156,\n      2,\n      0,\n      0,\n      \"CREATE TABLE disease_embedding(disease_id INTEGER, embedding DOUBLE[]);\"\n    ],\n    [\n      \"medical\",\n      592,\n      \"main\",\n      590,\n      \"disease_symptom\",\n      2028,\n      null,\n      {},\n      false,\n      false,\n      true,\n      3709,\n      3,\n      1,\n      0,\n      \"CREATE TABLE disease_symptom(disease_id INTEGER, symptom_id INTEGER, incidence FLOAT, PRIMARY KEY(disease_id, symptom_id));\"\n    ],\n    [\n      \"medical\",\n      592,\n      \"main\",\n      590,\n      \"symptom\",\n      2018,\n      null,\n      {},\n      false,\n      false,\n      true,\n      330,\n      2,\n      2,\n      0,\n      \"CREATE TABLE symptom(symptom_id INTEGER DEFAULT(nextval('symptom_seq')) PRIMARY KEY, \\\"name\\\" VARCHAR UNIQUE);\"\n    ]\n  ],\n  \"row_count\": 4\n}",
+    "nerResult": "",
+    "executionLog": "[10:15:33 AM] ℹ️ Initializing Pub/Sub Agent System...\n[10:15:33 AM] ℹ️ Total agents configured: 1\n[10:15:33 AM] ℹ️ Data sources: 1\n[10:15:33 AM] 📡 Bus initialized\n[10:15:33 AM] 📡 Agent \"Agent 1\" subscribed to topic \"START\"\n[10:15:33 AM] 📡 Data source \"DuckDB\" subscribed to topic \"DUCKDB_TABLES\"\n[10:15:33 AM] 📡 Published to \"START\": System initialized\n[10:15:33 AM] 🤖 Agent \"Agent 1\" triggered by topic \"start\"\n[10:15:33 AM] 🤖 Agent \"Agent 1\" processing...\n[10:15:33 AM] ℹ️ Input: System initialized\n[10:15:33 AM] ℹ️ Output: {\n  \"columns\": [\n    \"database_name\",\n    \"database_oid\",\n    \"schema_name\",\n    \"schema_oid\",\n    \"table_name\",\n    \"table_oid\",\n    \"comment\",\n    \"tags\",\n    \"internal\",\n    \"temporary\",\n    \"has_p...\n[10:15:33 AM] ✅ SQL Query executed: 4 rows returned\n[10:15:33 AM] 📡 Published to \"DUCKDB_TABLES\": {\n  \"columns\": [\n    \"database_name\",\n    \"database_oid\",\n    \"schema_name\",\n    \"schema_oid\",\n    \"...\n[10:15:33 AM] ✅ Agent \"Agent 1\" completed\n[10:15:33 AM] 📡 Data source \"DuckDB\" updated with message from \"duckdb_tables\"\n[10:15:33 AM] ✅ \n=== EXECUTION COMPLETE ===\n"
+  }
+}
