@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-02-21T15:14:34.478Z",
+  "userQuestion": "Which are the symptoms of the \"common cold\" disease?",
+  "dataSources": [
+    {
+      "label": "Schema",
+      "content": "disease(disease_id, name)\nsymptom(symptom_id, name)\ndisease_symptom(disease_id, symptom_id, incidence)\n",
+      "subscribeTopic": ""
+    }
+  ],
+  "agents": [
+    {
+      "title": "Agent 1",
+      "prompt": "Given the following schema of a database:\n---\n{Schema}\n---\n\nCan you produce an SQL query to answer the question:\n{Question}\n\n---\n\nGive me only the SQL, ready to run, without any other text, also without markdown marks (without ```sql).",
+      "model": "phi4-mini",
+      "subscribeTopic": "START",
+      "publishTopic": "SQL_REQUEST",
+      "showResult": false
+    },
+    {
+      "title": "Agent 2",
+      "prompt": "{Input}",
+      "model": "SQL",
+      "subscribeTopic": "SQL_REQUEST",
+      "publishTopic": "",
+      "showResult": true
+    }
+  ],
+  "results": {
+    "finalResult": "--- Agent 2 ---\n\n{\n  \"columns\": [\n    \"name\"\n  ],\n  \"rows\": [\n    [\n      \"fever\"\n    ],\n    [\n      \"chills\"\n    ],\n    [\n      \"sore throat\"\n    ],\n    [\n      \"discomfort\"\n    ],\n    [\n      \"night sweats\"\n    ],\n    [\n      \"nausea\"\n    ],\n    [\n      \"diarrhea\"\n    ],\n    [\n      \"dizziness\"\n    ],\n    [\n      \"coughing\"\n    ],\n    [\n      \"lightheadedness\"\n    ],\n    [\n      \"racing heartbeat\"\n    ],\n    [\n      \"fatigue\"\n    ],\n    [\n      \"lethargy\"\n    ],\n    [\n      \"headache\"\n    ],\n    [\n      \"dry cough\"\n    ],\n    [\n      \"malaise\"\n    ],\n    [\n      \"fainting\"\n    ],\n    [\n      \"sweating\"\n    ],\n    [\n      \"leg pain\"\n    ],\n    [\n      \"skin rash\"\n    ],\n    [\n      \"numbness\"\n    ],\n    [\n      \"ache\"\n    ],\n    [\n      \"cough with phlegm\"\n    ],\n    [\n      \"loss of appetite\"\n    ],\n    [\n      \"foot pain\"\n    ],\n    [\n      \"nasal congestion\"\n    ],\n    [\n      \"phlegm\"\n    ],\n    [\n      \"runny nose\"\n    ],\n    [\n      \"ear pain\"\n    ],\n    [\n      \"stuffy nose\"\n    ],\n    [\n      \"low body temperature\"\n    ],\n    [\n      \"shivering\"\n    ],\n    [\n      \"pins and needles\"\n    ],\n    [\n      \"sneezing\"\n    ],\n    [\n      \"sinus pressure\"\n    ],\n    [\n      \"feeling cold\"\n    ],\n    [\n      \"sensitivity to light\"\n    ],\n    [\n      \"mild cough\"\n    ],\n    [\n      \"eye redness\"\n    ],\n    [\n      \"head congestion\"\n    ]\n  ],\n  \"row_count\": 40\n}",
+    "nerResult": "",
+    "executionLog": "[12:13:32 PM] ℹ️ Initializing Pub/Sub Agent System...\n[12:13:32 PM] ℹ️ Total agents configured: 2\n[12:13:32 PM] ℹ️ Data sources: 1\n[12:13:32 PM] ℹ️ User Question: Which are the symptoms of the \"common cold\" disease?\n[12:13:57 PM] 📡 Bus initialized\n[12:13:57 PM] 📡 Agent \"Agent 1\" subscribed to topic \"START\"\n[12:13:57 PM] 📡 Agent \"Agent 2\" subscribed to topic \"SQL_REQUEST\"\n[12:13:57 PM] 📡 Published to \"START\": Which are the symptoms of the \"common cold\" disease?\n[12:13:57 PM] 🤖 Agent \"Agent 1\" triggered by topic \"start\"\n[12:13:57 PM] 🤖 Agent \"Agent 1\" processing...\n[12:13:57 PM] ℹ️ Input: Which are the symptoms of the \"common cold\" disease?\n[12:13:57 PM] ℹ️ Output: SELECT s.name\nFROM symptom AS s\nJOIN disease_symptom AS ds ON s.symptom_id = ds.symptom_id\nJOIN disease AS d ON ds.disease_id = d.disease_id\nWHERE d.name = 'common cold';\n[12:13:57 PM] 📡 Published to \"SQL_REQUEST\": SELECT s.name\nFROM symptom AS s\nJOIN disease_symptom AS ds ON s.symptom_id = ds.symptom_id\nJOIN dise...\n[12:13:57 PM] ✅ Agent \"Agent 1\" completed\n[12:13:57 PM] 🤖 Agent \"Agent 2\" triggered by topic \"sql_request\"\n[12:13:57 PM] 🤖 Agent \"Agent 2\" processing...\n[12:13:57 PM] ℹ️ Input: SELECT s.name\nFROM symptom AS s\nJOIN disease_symptom AS ds ON s.symptom_id = ds.symptom_id\nJOIN disease AS d ON ds.disease_id = d.disease_id\nWHERE d.name = 'common cold';\n[12:13:57 PM] ℹ️ Output: {\n  \"columns\": [\n    \"name\"\n  ],\n  \"rows\": [\n    [\n      \"fever\"\n    ],\n    [\n      \"chills\"\n    ],\n    [\n      \"sore throat\"\n    ],\n    [\n      \"discomfort\"\n    ],\n    [\n      \"night sweats\"\n    ],\n ...\n[12:13:57 PM] ✅ SQL Query executed: 40 rows returned\n[12:13:57 PM] ✅ Agent \"Agent 2\" completed\n[12:13:57 PM] ✅ \n=== EXECUTION COMPLETE ===\n"
+  }
+}

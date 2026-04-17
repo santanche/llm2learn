@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-04-17T08:41:22.520Z",
+  "userQuestion": "myocardial infarction",
+  "dataSources": [
+    {
+      "label": "Case",
+      "content": "NURSE:\nDoctor, we have a man (51 years old) who entered the emergency department reporting chest pain. His vital signs are ABP: 144x92mmHG; HR: 78bpm; RR: 21rpm; Temp: 37oC; O2Sat: 98%.\n\nPATIENT:\nDoctor, I am feeling chest pain since yesterday. The pain is continuous and is located just in the middle of my chest, worsening when I breathe and when I lay down on my bed. I suffer from arterial hypertension and smoke 20 cigarettes every day. My father had a “heart attack” at my age and I am very worried about it.\n\nPHYSICAL EXAMINATION: The cardiac and pulmonary auscultation are normal; chest pain does not worse with palpation of the thorax; there is no jugular stasis nor lower limb edema.",
+      "subscribeTopic": ""
+    }
+  ],
+  "agents": [
+    {
+      "title": "Agent 1",
+      "prompt": "Given the case:\n-----\n{Case}\n-----\n\nDo you think {Question} is a good diagnostic hypothesis for this case? Comment with your answer.",
+      "model": "MedAIBase/MedGemma1.5:4b",
+      "subscribeTopic": "START",
+      "publishTopic": "",
+      "showResult": true
+    }
+  ],
+  "results": {
+    "finalResult": "--- Agent 1 ---\n\nBased on the information provided, **myocardial infarction (MI) is a reasonable diagnostic hypothesis to consider for this patient.**\n\nHere's why:\n\n*   **Chest Pain:** The patient presents with chest pain, which is a hallmark symptom of MI.\n*   **Characteristics of Pain:** The pain is described as continuous, located centrally, and worsening with breathing (pleuritic component) and lying down. These characteristics can be seen in MI, although they can also be associated with other conditions.\n*   **Risk Factors:** The patient has significant risk factors for MI:\n    *   Age (51 years old)\n    *   Arterial hypertension\n    *   Smoking (20 cigarettes/day)\n    *   Family history of MI (father)\n*   **Patient's Anxiety:** The patient's expressed worry about having a heart attack further increases the suspicion for MI.\n\n**However, it's crucial to consider other possibilities as well.** While MI is a strong possibility, other conditions can cause similar symptoms, including:\n\n*   **Angina Pectoris:** Stable or unstable angina can present with chest pain, often triggered by exertion or stress, but can also occur at rest.\n*   **Pulmonary Embolism:** Can cause pleuritic chest pain and shortness of breath.\n*   **Pericarditis:** Inflammation of the pericardium can cause chest pain, often worse when lying down and breathing deeply.\n*   **Gastrointestinal Issues:** GERD, esophageal spasm, or peptic ulcer disease can sometimes cause chest pain.\n*   **Musculoskeletal Pain:** Costochondritis or other chest wall pain.\n\n**Conclusion:**\n\nGiven the patient's presentation, risk factors, and expressed anxiety, **myocardial infarction is a good initial diagnostic hypothesis** that warrants further investigation. The next steps would involve obtaining an ECG, cardiac enzymes (like troponin), and potentially other imaging studies (like a stress test or echocardiogram) to confirm or rule out MI and identify other potential causes.",
+    "nerResult": "",
+    "executionLog": "[5:36:59 AM] ℹ️ Initializing Pub/Sub Agent System...\n[5:36:59 AM] ℹ️ Total agents configured: 1\n[5:36:59 AM] ℹ️ Data sources: 1\n[5:36:59 AM] ℹ️ User Question: myocardial infarction\n[5:40:12 AM] 📡 Bus initialized\n[5:40:12 AM] 📡 Agent \"Agent 1\" subscribed to topic \"START\"\n[5:40:12 AM] 📡 Published to \"START\": myocardial infarction\n[5:40:12 AM] 🤖 Agent \"Agent 1\" triggered by topic \"start\"\n[5:40:12 AM] 🤖 Agent \"Agent 1\" processing...\n[5:40:12 AM] ℹ️ Input: myocardial infarction\n[5:40:12 AM] ℹ️ Output: Based on the information provided, **myocardial infarction (MI) is a reasonable diagnostic hypothesis to consider for this patient.**\n\nHere's why:\n\n*   **Chest Pain:** The patient presents with chest ...\n[5:40:12 AM] ✅ Agent \"Agent 1\" completed\n[5:40:12 AM] ✅ \n=== EXECUTION COMPLETE ===\n"
+  }
+}
