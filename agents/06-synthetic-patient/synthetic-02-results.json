@@ -1,18 +1,18 @@
 {
   "version": "1.0",
-  "timestamp": "2026-06-15T14:10:53.535Z",
+  "timestamp": "2026-06-15T15:34:00.312Z",
   "views": [
     {
       "type": "textual",
-      "title": "Textual Result 1",
-      "subscribeTopic": "RESULT",
+      "title": "Synthetic Patient",
+      "subscribeTopic": "PATIENT",
       "visible": true
     },
     {
       "type": "logs",
       "title": "Execution Log",
       "subscribeTopic": "",
-      "visible": true
+      "visible": false
     }
   ],
   "dataSources": [
@@ -43,17 +43,17 @@
   ],
   "agents": [
     {
-      "title": "Agent 1",
+      "title": "Author",
       "prompt": "You are an expert clinical AI assistant. Your task is to generate a realistic, clinically plausible case vignette by synthesizing a structured style template with a structured patient data.\n\nI will provide you with the formatting layout in {Template} and the raw patient metrics in {Clinical}.\n\n### Core Directives:\n1. **Format Matching:** You must strictly follow the structural sections and conversational tone seen in {Template} (using the @NURSE, @PATIENT, **PHYSICAL EXAMINATION**, and **More information** headers).\n2. **Data Translation:** Translate the discrete metrics from {Clinical} into a cohesive medical story:\n   - **Demographics:** Map 'age' directly, and translate 'sex' (typically 1 = Male, 0 = Female).\n   - **Risk Factors & Comorbidities:** If 'smoking', 'high_blood_pressure', or 'diabetes' are present (1), weave them naturally into the patient's history, current symptoms, and active medications.\n   - **Clinical Presentation:** Use metrics like 'ejection_fraction' to infer the severity of the heart failure presentation (e.g., lower EF should translate to more severe congestive symptoms like dyspnea, orthopnea, or fatigue).\n   - **Vitals & Labs:** Extrapolate realistic, clinically coherent vital signs for the @NURSE section and integrate lab values ('serum_creatinine', 'serum_sodium', 'creatinine_phosphokinase') into the **More information** or examination section.\n3. **Consistency:** Ensure that the generated narrative remains strictly logical and medically consistent with a heart failure exacerbation or related cardiac event.\n\n---\n\n### [TEMPLATE FORMAT]\n{Template}\n\n---\n\n### [CLINICAL DATA]\n{Input}\n\n---\n\nGenerate the clinical case vignette below following the exact structure of the template:",
       "factsRules": "",
       "query": "",
       "model": "MedAIBase/MedGemma1.5:4b",
       "subscribeTopic": "CSV_ROW",
-      "publishTopic": "RESULT",
+      "publishTopic": "PATIENT",
       "visible": true
     }
   ],
   "results": {
-    "executionLog": "[11:05:59 AM] ℹ️ Initializing Pub/Sub Agent System...\n[11:05:59 AM] ℹ️ Total agents configured: 1\n[11:05:59 AM] ℹ️ Data sources: 2\n[11:10:37 AM] 📡 Bus initialized\n[11:10:37 AM] 📡 Agent \"Agent 1\" subscribed to topic \"CSV_ROW\"\n[11:10:37 AM] 📡 Data source \"Clinical\" subscribed to topic \"START\"\n[11:10:37 AM] 📡 Published to \"START\": System initialized\n[11:10:37 AM] 📡 Data source \"Clinical\" dispatched row 1 to \"CSV_ROW\"\n[11:10:37 AM] 📡 Published to \"CSV_ROW\": * age: 75\n* anaemia: 0\n* creatinine_phosphokinase: 582\n* diabetes: 0\n* ejection_fraction: 20\n* high_...\n[11:10:37 AM] 🤖 Agent \"Agent 1\" triggered by topic \"csv_row\"\n[11:10:37 AM] 🤖 Agent \"Agent 1\" processing...\n[11:10:37 AM] ℹ️ Input: * age: 75\n* anaemia: 0\n* creatinine_phosphokinase: 582\n* diabetes: 0\n* ejection_fraction: 20\n* high_blood_pressure: 1\n* platelets: 265000\n* serum_creatinine: 1.9\n* serum_sodium: 130\n* sex: 1\n* smoking: 0\n* time: 4\n* DEATH_EVENT: 1\n[11:10:37 AM] ℹ️ Output: ---\n### [TEMPLATE FORMAT]\nBegin\n-----\n@NURSE\n> Doctor, we have a man (51 years old) who entered the emergency department reporting chest pain. His vital signs are ABP: 144x92mmHG; HR: 78bpm; RR: 21rpm...\n[11:10:37 AM] 📡 Published to \"RESULT\": ---\n### [TEMPLATE FORMAT]\nBegin\n-----\n@NURSE\n> Doctor, we have a man (51 years old) who entered the ...\n[11:10:37 AM] ✅ Agent \"Agent 1\" completed\n[11:10:37 AM] ❌ No subscribers for topic \"result\"\n[11:10:37 AM] ✅ \n=== EXECUTION COMPLETE ===\n"
+    "executionLog": "[11:05:59 AM] ℹ️ Initializing Pub/Sub Agent System...\n[11:05:59 AM] ℹ️ Total agents configured: 1\n[11:05:59 AM] ℹ️ Data sources: 2\n[11:10:37 AM] 📡 Bus initialized\n[11:10:37 AM] 📡 Agent \"Agent 1\" subscribed to topic \"CSV_ROW\"\n[11:10:37 AM] 📡 Data source \"Clinical\" subscribed to topic \"START\"\n[11:10:37 AM] 📡 Published to \"START\": System initialized\n[11:10:37 AM] 📡 Data source \"Clinical\" dispatched row 1 to \"CSV_ROW\"\n[11:10:37 AM] 📡 Published to \"CSV_ROW\": * age: 75\n* anaemia: 0\n* creatinine_phosphokinase: 582\n* diabetes: 0\n* ejection_fraction: 20\n* high_...\n[11:10:37 AM] 🤖 Agent \"Agent 1\" triggered by topic \"csv_row\"\n[11:10:37 AM] 🤖 Agent \"Agent 1\" processing...\n[11:10:37 AM] ℹ️ Input: * age: 75\n* anaemia: 0\n* creatinine_phosphokinase: 582\n* diabetes: 0\n* ejection_fraction: 20\n* high_blood_pressure: 1\n* platelets: 265000\n* serum_creatinine: 1.9\n* serum_sodium: 130\n* sex: 1\n* smoking: 0\n* time: 4\n* DEATH_EVENT: 1\n[11:10:37 AM] ℹ️ Output: ---\n### [TEMPLATE FORMAT]\nBegin\n-----\n@NURSE\n> Doctor, we have a man (51 years old) who entered the emergency department reporting chest pain. His vital signs are ABP: 144x92mmHG; HR: 78bpm; RR: 21rpm...\n[11:10:37 AM] 📡 Published to \"RESULT\": ---\n### [TEMPLATE FORMAT]\nBegin\n-----\n@NURSE\n> Doctor, we have a man (51 years old) who entered the ...\n[11:10:37 AM] ✅ Agent \"Agent 1\" completed\n[11:10:37 AM] ❌ No subscribers for topic \"result\"\n[11:10:37 AM] ✅ \n=== EXECUTION COMPLETE ===\n[11:10:53 AM] ✅ Configuration saved successfully (with results)\n"
   }
 }

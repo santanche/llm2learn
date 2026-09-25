@@ -1,0 +1,136 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-06-15T16:53:59.403Z",
+  "views": [
+    {
+      "type": "ner",
+      "title": "Show Entities",
+      "subscribeTopic": "ENTITIES",
+      "visible": true,
+      "savedContent": "Patient complains of severe pain in the abdomen and stomach, accompanied by difficulty breathing affecting the lungs. Ultrasound revealed enlargement of the liver. Prescribed ibuprofen for pain relief.",
+      "savedEntities": [
+        {
+          "text": "severe pain in the abdomen and stomach",
+          "entity_type": "problem",
+          "start": 21,
+          "end": 59,
+          "score": 0.9986403584480286
+        },
+        {
+          "text": "difficulty breathing affecting the lungs",
+          "entity_type": "problem",
+          "start": 76,
+          "end": 116,
+          "score": 0.7840470671653748
+        },
+        {
+          "text": "ultrasound",
+          "entity_type": "test",
+          "start": 118,
+          "end": 128,
+          "score": 0.9948904514312744
+        },
+        {
+          "text": "en",
+          "entity_type": "problem",
+          "start": 138,
+          "end": 140,
+          "score": 0.9981847405433655
+        },
+        {
+          "text": "##lar",
+          "entity_type": "problem",
+          "start": 140,
+          "end": 143,
+          "score": 0.8167226910591125
+        },
+        {
+          "text": "##gement of the liver",
+          "entity_type": "problem",
+          "start": 143,
+          "end": 162,
+          "score": 0.9988746643066406
+        },
+        {
+          "text": "ibuprofen",
+          "entity_type": "treatment",
+          "start": 175,
+          "end": 184,
+          "score": 0.9922875761985779
+        },
+        {
+          "text": "pain relief",
+          "entity_type": "treatment",
+          "start": 189,
+          "end": 200,
+          "score": 0.7693454027175903
+        }
+      ]
+    },
+    {
+      "type": "textual",
+      "title": "Show Prolog",
+      "subscribeTopic": "PROLOG_ENTITIES",
+      "visible": true,
+      "savedContent": "entity(0, 'problem', 'severe pain in the abdomen and stomach', 21, 59, 0.9986).\nentity(1, 'problem', 'difficulty breathing affecting the lungs', 76, 116, 0.784).\nentity(2, 'test', 'ultrasound', 118, 128, 0.9949).\nentity(3, 'problem', 'en', 138, 140, 0.9982).\nentity(4, 'problem', '##lar', 140, 143, 0.8167).\nentity(5, 'problem', '##gement of the liver', 143, 162, 0.9989).\nentity(6, 'treatment', 'ibuprofen', 175, 184, 0.9923).\nentity(7, 'treatment', 'pain relief', 189, 200, 0.7693).",
+      "savedEntities": []
+    },
+    {
+      "type": "textual",
+      "title": "Textual Result 2",
+      "subscribeTopic": "QUERY",
+      "visible": true,
+      "savedContent": "{\n  \"solutions\": [\n    {\n      \"A\": \"problem\",\n      \"B\": \"severe pain in the abdomen and stomach\",\n      \"C\": 0.9986\n    },\n    {\n      \"A\": \"problem\",\n      \"B\": \"difficulty breathing affecting the lungs\",\n      \"C\": 0.784\n    },\n    {\n      \"A\": \"test\",\n      \"B\": \"ultrasound\",\n      \"C\": 0.9949\n    },\n    {\n      \"A\": \"problem\",\n      \"B\": \"en\",\n      \"C\": 0.9982\n    },\n    {\n      \"A\": \"problem\",\n      \"B\": \"##lar\",\n      \"C\": 0.8167\n    },\n    {\n      \"A\": \"problem\",\n      \"B\": \"##gement of the liver\",\n      \"C\": 0.9989\n    },\n    {\n      \"A\": \"treatment\",\n      \"B\": \"ibuprofen\",\n      \"C\": 0.9923\n    },\n    {\n      \"A\": \"treatment\",\n      \"B\": \"pain relief\",\n      \"C\": 0.7693\n    }\n  ],\n  \"solution_count\": 8\n}",
+      "savedEntities": []
+    }
+  ],
+  "dataSources": [
+    {
+      "label": "Case",
+      "type": "passive",
+      "content": "Patient complains of severe pain in the abdomen and stomach, accompanied by difficulty breathing affecting the lungs. Ultrasound revealed enlargement of the liver. Prescribed ibuprofen for pain relief.",
+      "subscribeTopic": "",
+      "appendContent": false,
+      "splitLastLine": false,
+      "firstTopic": "",
+      "nextTopic": "",
+      "publishTopic": "",
+      "visible": true
+    }
+  ],
+  "agents": [
+    {
+      "title": "Recognizer",
+      "prompt": "{Case}",
+      "factsRules": "",
+      "query": "",
+      "model": "samrawal/bert-base-uncased_clinical-ner",
+      "subscribeTopic": "START",
+      "publishTopic": "ENTITIES",
+      "visible": true
+    },
+    {
+      "title": "Agent 2",
+      "prompt": "{Input}",
+      "factsRules": "",
+      "query": "",
+      "model": "NER2PROLOG",
+      "subscribeTopic": "ENTITIES",
+      "publishTopic": "PROLOG_ENTITIES",
+      "visible": true
+    },
+    {
+      "title": "Agent 3",
+      "prompt": "",
+      "factsRules": "",
+      "query": "entity(_,A,B,_,_,C).",
+      "model": "PROLOG",
+      "subscribeTopic": "PROLOG_ENTITIES",
+      "publishTopic": "QUERY",
+      "visible": true
+    }
+  ],
+  "results": {
+    "executionLog": "[1:53:45 PM] ℹ️ Initializing Pub/Sub Agent System...\n[1:53:45 PM] ℹ️ Total agents configured: 3\n[1:53:45 PM] ℹ️ Data sources: 1\n[1:53:45 PM] 📡 Bus initialized\n[1:53:45 PM] 📡 Agent \"Recognizer\" subscribed to topic \"START\"\n[1:53:45 PM] 📡 Agent \"Agent 2\" subscribed to topic \"ENTITIES\"\n[1:53:45 PM] 📡 Agent \"Agent 3\" subscribed to topic \"PROLOG_ENTITIES\"\n[1:53:45 PM] 📡 Published to \"START\": System initialized\n[1:53:45 PM] 🤖 Agent \"Recognizer\" triggered by topic \"start\"\n[1:53:45 PM] 🤖 Agent \"Recognizer\" processing...\n[1:53:45 PM] ℹ️ Input: System initialized\n[1:53:45 PM] ℹ️ Output: {\n  \"text\": \"Patient complains of severe pain in the abdomen and stomach, accompanied by difficulty breathing affecting the lungs. Ultrasound revealed enlargement of the liver. Prescribed ibuprofen fo...\n[1:53:45 PM] 📡 Published to \"ENTITIES\": {\n  \"text\": \"Patient complains of severe pain in the abdomen and stomach, accompanied by difficulty ...\n[1:53:45 PM] ✅ Agent \"Recognizer\" completed\n[1:53:45 PM] 🤖 Agent \"Agent 2\" triggered by topic \"entities\"\n[1:53:45 PM] 🤖 Agent \"Agent 2\" processing...\n[1:53:45 PM] ℹ️ Input: {\n  \"text\": \"Patient complains of severe pain in the abdomen and stomach, accompanied by difficulty breathing affecting the lungs. Ultrasound revealed enlargement of the liver. Prescribed ibuprofen for pain relief.\",\n  \"entities\": [\n    {\n      \"text\": \"severe pain in the abdomen and stomach\",\n      \"entity_type\": \"problem\",\n      \"start\": 21,\n      \"end\": 59,\n      \"score\": 0.9986403584480286\n    },\n    {\n      \"text\": \"difficulty breathing affecting the lungs\",\n      \"entity_type\": \"problem\",\n      \"start\": 76,\n      \"end\": 116,\n      \"score\": 0.7840470671653748\n    },\n    {\n      \"text\": \"ultrasound\",\n      \"entity_type\": \"test\",\n      \"start\": 118,\n      \"end\": 128,\n      \"score\": 0.9948904514312744\n    },\n    {\n      \"text\": \"en\",\n      \"entity_type\": \"problem\",\n      \"start\": 138,\n      \"end\": 140,\n      \"score\": 0.9981847405433655\n    },\n    {\n      \"text\": \"##lar\",\n      \"entity_type\": \"problem\",\n      \"start\": 140,\n      \"end\": 143,\n      \"score\": 0.8167226910591125\n    },\n    {\n      \"text\": \"##gement of the liver\",\n      \"entity_type\": \"problem\",\n      \"start\": 143,\n      \"end\": 162,\n      \"score\": 0.9988746643066406\n    },\n    {\n      \"text\": \"ibuprofen\",\n      \"entity_type\": \"treatment\",\n      \"start\": 175,\n      \"end\": 184,\n      \"score\": 0.9922875761985779\n    },\n    {\n      \"text\": \"pain relief\",\n      \"entity_type\": \"treatment\",\n      \"start\": 189,\n      \"end\": 200,\n      \"score\": 0.7693454027175903\n    }\n  ]\n}\n[1:53:45 PM] ℹ️ Output: entity(0, 'problem', 'severe pain in the abdomen and stomach', 21, 59, 0.9986).\nentity(1, 'problem', 'difficulty breathing affecting the lungs', 76, 116, 0.784).\nentity(2, 'test', 'ultrasound', 118, 1...\n[1:53:45 PM] 📡 Published to \"PROLOG_ENTITIES\": entity(0, 'problem', 'severe pain in the abdomen and stomach', 21, 59, 0.9986).\nentity(1, 'problem',...\n[1:53:45 PM] ✅ Agent \"Agent 2\" completed\n[1:53:45 PM] 🤖 Agent \"Agent 3\" triggered by topic \"prolog_entities\"\n[1:53:45 PM] 🤖 Agent \"Agent 3\" processing...\n[1:53:45 PM] ℹ️ Input: entity(0, 'problem', 'severe pain in the abdomen and stomach', 21, 59, 0.9986).\nentity(1, 'problem', 'difficulty breathing affecting the lungs', 76, 116, 0.784).\nentity(2, 'test', 'ultrasound', 118, 128, 0.9949).\nentity(3, 'problem', 'en', 138, 140, 0.9982).\nentity(4, 'problem', '##lar', 140, 143, 0.8167).\nentity(5, 'problem', '##gement of the liver', 143, 162, 0.9989).\nentity(6, 'treatment', 'ibuprofen', 175, 184, 0.9923).\nentity(7, 'treatment', 'pain relief', 189, 200, 0.7693).\n[1:53:45 PM] ℹ️ Output: {\n  \"solutions\": [\n    {\n      \"A\": \"problem\",\n      \"B\": \"severe pain in the abdomen and stomach\",\n      \"C\": 0.9986\n    },\n    {\n      \"A\": \"problem\",\n      \"B\": \"difficulty breathing affecting the ...\n[1:53:45 PM] ✅ Prolog query executed: 8 solutions returned\n[1:53:45 PM] 📡 Published to \"QUERY\": {\n  \"solutions\": [\n    {\n      \"A\": \"problem\",\n      \"B\": \"severe pain in the abdomen and stomach\",\n...\n[1:53:45 PM] ✅ Agent \"Agent 3\" completed\n[1:53:45 PM] ❌ No subscribers for topic \"query\"\n[1:53:45 PM] ✅ \n=== EXECUTION COMPLETE ===\n"
+  }
+}

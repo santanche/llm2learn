@@ -1,0 +1,227 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-06-15T16:19:56.962Z",
+  "views": [
+    {
+      "type": "ner",
+      "title": "NER Result",
+      "subscribeTopic": "ANNOTATED",
+      "visible": true,
+      "savedContent": "Begin\n-----\n\n@NURSE\n> Doctor, we have a man (51 years old) who entered the emergency department reporting chest pain. His vital signs are ABP: 144x92mmHG; HR: 78bpm; RR: 21rpm; Temp: 37oC; O2Sat: 98%.\n\n@PATIENT\n> Doctor, I am feeling chest pain since yesterday. The pain is continuous and is located just in the middle of my chest, worsening when I breathe and when I lay down on my bed. I suffer from arterial hypertension and smoke 20 cigarettes every day. My father had a “heart attack” at my age and I am very worried about it.\n\n**PHYSICAL EXAMINATION**\n\nThe cardiac and pulmonary auscultation are normal; chest pain does not worse with palpation of the thorax; there is no jugular stasis nor lower limb edema.\n\nMore information\n----------------\n\nThe patient never felt chest pain before. He exercises regularly and has lost weight in the last three months. He takes amlodipine and losartan regularly. Two weeks ago, he had an auto-limited gastroenteritis episode. He denies recent travels and surgery.\n",
+      "savedEntities": [
+        {
+          "text": "chest pain",
+          "entity_type": "problem",
+          "start": 106,
+          "end": 116,
+          "score": 0.9973653554916382
+        },
+        {
+          "text": "his vital signs",
+          "entity_type": "test",
+          "start": 118,
+          "end": 133,
+          "score": 0.9269378781318665
+        },
+        {
+          "text": "ab",
+          "entity_type": "test",
+          "start": 138,
+          "end": 140,
+          "score": 0.9714946746826172
+        },
+        {
+          "text": "hr",
+          "entity_type": "test",
+          "start": 155,
+          "end": 157,
+          "score": 0.5291900634765625
+        },
+        {
+          "text": "te",
+          "entity_type": "test",
+          "start": 177,
+          "end": 179,
+          "score": 0.7111454606056213
+        },
+        {
+          "text": "o2sat",
+          "entity_type": "test",
+          "start": 189,
+          "end": 194,
+          "score": 0.9609149098396301
+        },
+        {
+          "text": "chest pain",
+          "entity_type": "problem",
+          "start": 234,
+          "end": 244,
+          "score": 0.9965430498123169
+        },
+        {
+          "text": "the pain",
+          "entity_type": "problem",
+          "start": 262,
+          "end": 270,
+          "score": 0.9948675036430359
+        },
+        {
+          "text": "arterial hypertension",
+          "entity_type": "problem",
+          "start": 402,
+          "end": 423,
+          "score": 0.9983988404273987
+        },
+        {
+          "text": "a",
+          "entity_type": "problem",
+          "start": 473,
+          "end": 474,
+          "score": 0.9847500324249268
+        },
+        {
+          "text": "“ heart attack",
+          "entity_type": "problem",
+          "start": 475,
+          "end": 488,
+          "score": 0.9055063128471375
+        },
+        {
+          "text": "physical examination",
+          "entity_type": "test",
+          "start": 535,
+          "end": 555,
+          "score": 0.9872768521308899
+        },
+        {
+          "text": "the cardiac and pulmonary auscultation",
+          "entity_type": "test",
+          "start": 559,
+          "end": 597,
+          "score": 0.9832776784896851
+        },
+        {
+          "text": "chest pain",
+          "entity_type": "problem",
+          "start": 610,
+          "end": 620,
+          "score": 0.9978635311126709
+        },
+        {
+          "text": "pal",
+          "entity_type": "test",
+          "start": 641,
+          "end": 644,
+          "score": 0.9913657903671265
+        },
+        {
+          "text": "##pati",
+          "entity_type": "test",
+          "start": 644,
+          "end": 648,
+          "score": 0.9573283791542053
+        },
+        {
+          "text": "##on of the thorax",
+          "entity_type": "test",
+          "start": 648,
+          "end": 664,
+          "score": 0.99006587266922
+        },
+        {
+          "text": "jugular stasis",
+          "entity_type": "problem",
+          "start": 678,
+          "end": 692,
+          "score": 0.9904745817184448
+        },
+        {
+          "text": "lower limb edema",
+          "entity_type": "problem",
+          "start": 697,
+          "end": 713,
+          "score": 0.9981244802474976
+        },
+        {
+          "text": "chest pain",
+          "entity_type": "problem",
+          "start": 774,
+          "end": 784,
+          "score": 0.9969164729118347
+        },
+        {
+          "text": "amlodipine",
+          "entity_type": "treatment",
+          "start": 871,
+          "end": 881,
+          "score": 0.948133111000061
+        },
+        {
+          "text": "los",
+          "entity_type": "treatment",
+          "start": 886,
+          "end": 889,
+          "score": 0.9977430105209351
+        },
+        {
+          "text": "##artan",
+          "entity_type": "treatment",
+          "start": 889,
+          "end": 894,
+          "score": 0.7511297464370728
+        },
+        {
+          "text": "an auto - limited gastroenteritis episode",
+          "entity_type": "problem",
+          "start": 928,
+          "end": 967,
+          "score": 0.9981067180633545
+        },
+        {
+          "text": "surgery",
+          "entity_type": "treatment",
+          "start": 998,
+          "end": 1005,
+          "score": 0.9756574630737305
+        }
+      ]
+    },
+    {
+      "type": "logs",
+      "title": "Execution Log",
+      "subscribeTopic": "",
+      "visible": true,
+      "savedContent": "",
+      "savedEntities": []
+    }
+  ],
+  "dataSources": [
+    {
+      "label": "Case",
+      "type": "passive",
+      "content": "Begin\n-----\n\n@NURSE\n> Doctor, we have a man (51 years old) who entered the emergency department reporting chest pain. His vital signs are ABP: 144x92mmHG; HR: 78bpm; RR: 21rpm; Temp: 37oC; O2Sat: 98%.\n\n@PATIENT\n> Doctor, I am feeling chest pain since yesterday. The pain is continuous and is located just in the middle of my chest, worsening when I breathe and when I lay down on my bed. I suffer from arterial hypertension and smoke 20 cigarettes every day. My father had a “heart attack” at my age and I am very worried about it.\n\n**PHYSICAL EXAMINATION**\n\nThe cardiac and pulmonary auscultation are normal; chest pain does not worse with palpation of the thorax; there is no jugular stasis nor lower limb edema.\n\nMore information\n----------------\n\nThe patient never felt chest pain before. He exercises regularly and has lost weight in the last three months. He takes amlodipine and losartan regularly. Two weeks ago, he had an auto-limited gastroenteritis episode. He denies recent travels and surgery.\n",
+      "subscribeTopic": "",
+      "appendContent": false,
+      "splitLastLine": false,
+      "firstTopic": "",
+      "nextTopic": "",
+      "publishTopic": "",
+      "visible": true
+    }
+  ],
+  "agents": [
+    {
+      "title": "Annotator",
+      "prompt": "{Case}",
+      "factsRules": "",
+      "query": "",
+      "model": "samrawal/bert-base-uncased_clinical-ner",
+      "subscribeTopic": "START",
+      "publishTopic": "ANNOTATED",
+      "visible": true
+    }
+  ],
+  "results": {
+    "executionLog": "[12:59:55 PM] ℹ️ Initializing Pub/Sub Agent System...\n[12:59:55 PM] ℹ️ Total agents configured: 1\n[12:59:55 PM] ℹ️ Data sources: 1\n[12:59:55 PM] 📡 Bus initialized\n[12:59:55 PM] 📡 Agent \"Agent 1\" subscribed to topic \"START\"\n[12:59:55 PM] 📡 Published to \"START\": System initialized\n[12:59:55 PM] 🤖 Agent \"Agent 1\" triggered by topic \"start\"\n[12:59:55 PM] 🤖 Agent \"Agent 1\" processing...\n[12:59:55 PM] ℹ️ Input: System initialized\n[12:59:55 PM] ℹ️ Output: {\n  \"text\": \"Begin\\n-----\\n\\n@NURSE\\n> Doctor, we have a man (51 years old) who entered the emergency department reporting chest pain. His vital signs are ABP: 144x92mmHG; HR: 78bpm; RR: 21rpm; Temp: ...\n[12:59:55 PM] 📡 Published to \"ANNOTATED\": {\n  \"text\": \"Begin\\n-----\\n\\n@NURSE\\n> Doctor, we have a man (51 years old) who entered the emergenc...\n[12:59:55 PM] ✅ Agent \"Agent 1\" completed\n[12:59:55 PM] ❌ No subscribers for topic \"annotated\"\n[12:59:55 PM] ✅ \n=== EXECUTION COMPLETE ===\n[1:17:14 PM] ✅ Configuration loaded: 1 data sources, 1 agents (with saved results)\n[1:17:58 PM] ✅ Configuration saved successfully (with results)\n"
+  }
+}
