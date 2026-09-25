@@ -1,0 +1,22 @@
+[project]
+name = "multimodal"
+version = "0.1.0"
+description = "Simple image generation (drawings, characters, scenarios) with Janus-Pro-1B"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.4",
+    "transformers>=4.51,<5",   # Janus image generation is broken in 5.x
+    "accelerate",
+    "pillow",
+    "requests",
+]
+
+# CPU-only PyTorch: the local GPU (2 GB) cannot hold Janus-Pro-1B,
+# so the CUDA build would only add gigabytes of unused libraries.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
