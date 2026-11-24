@@ -57,3 +57,35 @@ generator = JanusImageGenerator()        # load once
 images = generator.generate("a child with a fever lying in bed, cartoon illustration")
 images[0].save("patient.png")
 ```
+
+## Batch generation from a CSV
+
+`janus_batch.py` generates one image per line of a CSV with the columns `id,prompt`,
+recording each finished image in a progress CSV (`id,prompt,filename,seed,seconds`).
+Press any key to stop at any moment (the image in progress is discarded); running the
+same command again resumes with the ids not yet in the progress CSV.
+
+```bash
+uv run janus_batch.py prompts/health_prompts.csv --out output/health
+```
+
+| Option | Description |
+|---|---|
+| `--out` | output directory (default `output/batch/`) |
+| `--progress` | progress CSV (default `<out>/progress.csv`) |
+| `--seed` | seed used for every prompt (default 42), so that directives can be compared |
+| `--random-seed` | do not fix the seed |
+| `--guidance`, `--temperature`, `--device`, `--float32` | as in `janus_image.py` |
+
+`prompts/health_prompts.csv` is an essay of 130 prompts in the health context:
+
+| ids | group |
+|---|---|
+| 1–23 | directive study: the same physician with different style directives (colorful drawing, clean lines, white/transparent background, line art, cartoon, flat vector, watercolor, pixel art, sticker, framing, negative directives) |
+| 24–33 | directive study: the same emergency room with different styles and viewpoints |
+| 34–56 | health scenarios: hospital exterior, reception, waiting room, triage, office, ward, ICU, operating room, pharmacy, lab, ambulance, home visit, rural post, etc. |
+| 57–68 | health professionals |
+| 69–94 | patients in clinical conditions (chest pain, dyspnea, fever, asthma, stroke, jaundice, edema, etc.) |
+| 95–98 | the same patient with different expressions (character consistency) |
+| 99–106 | clinical interactions (consultation, blood pressure, CPR, telemedicine, vaccination) |
+| 107–130 | objects, icons, diagrams, pain scale, body outline, text in images, infographics |
