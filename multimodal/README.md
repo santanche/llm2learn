@@ -89,3 +89,25 @@ uv run janus_batch.py prompts/health_prompts.csv --out output/health
 | 95–98 | the same patient with different expressions (character consistency) |
 | 99–106 | clinical interactions (consultation, blood pressure, CPR, telemedicine, vaccination) |
 | 107–130 | objects, icons, diagrams, pain scale, body outline, text in images, infographics |
+
+`prompts/health_prompts_diversity.csv` revisits the human prompts with explicit profiles,
+since unspecified people tend to come out with a single race/ethnic/social profile.
+Besides `id,prompt` (all that `janus_batch.py` reads) it has metadata columns for the
+analysis: `base_id` (the prompt in `health_prompts.csv` it varies), `section`,
+`ethnicity`, `skin_tone`, `gender`, `age`, `other`. It is produced by
+`prompts/gen_diversity_prompts.py`.
+
+| section | content |
+|---|---|
+| A | the physician of ids 1–23 × 14 ethnic groups × female/male, with a fixed style |
+| B | the same physician with skin tone only (7 tones, no ethnic label) × female/male |
+| C | other professionals (nurse, surgeon, paramedic, pharmacist, ...) rotating group and gender |
+| D | counter-stereotypical gender roles, age, body size, disability, vitiligo/albinism, religious attire, hair |
+| E | patients: each condition with two contrasting profiles; skin signs (rash, jaundice, cyanosis, anemia, stroke) on dark and light skin; the 95–98 consistency series in three profiles |
+| F | clinical interactions with explicit, non-stereotypical professional/patient pairings |
+| G | multiethnic groups and social contexts (rural, Indigenous, low-income, public/private, homelessness, refugees, family diversity) |
+| H | body outlines, pain scale and icons with varied skin tones |
+
+```bash
+uv run janus_batch.py prompts/health_prompts_diversity.csv --out output/diversity
+```

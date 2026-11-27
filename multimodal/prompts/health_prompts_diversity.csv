@@ -1,0 +1,217 @@
+id,prompt,base_id,section,ethnicity,skin_tone,gender,age,other
+1,"a Black African female physician with dark brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,black_african,dark,female,adult,
+2,"a Black African male physician with dark brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,black_african,dark,male,adult,
+3,"an African American female physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,african_american,brown_dark,female,adult,
+4,"an African American male physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,african_american,brown_dark,male,adult,
+5,"an Afro-Latino female physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,afro_latino,brown_dark,female,adult,
+6,"an Afro-Latino male physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,afro_latino,brown_dark,male,adult,
+7,"a Latino female physician with tan skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,latino,medium,female,adult,
+8,"a Latino male physician with tan skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,latino,medium,male,adult,
+9,"an Indigenous South American female physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,indigenous_south_american,medium_brown,female,adult,
+10,"an Indigenous South American male physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,indigenous_south_american,medium_brown,male,adult,
+11,"a Native American female physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,native_american,medium_brown,female,adult,
+12,"a Native American male physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,native_american,medium_brown,male,adult,
+13,"an East Asian female physician with light tan skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,east_asian,light_medium,female,adult,
+14,"an East Asian male physician with light tan skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,east_asian,light_medium,male,adult,
+15,"a Southeast Asian female physician with tan skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,southeast_asian,medium,female,adult,
+16,"a Southeast Asian male physician with tan skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,southeast_asian,medium,male,adult,
+17,"a South Asian female physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,south_asian,brown,female,adult,
+18,"a South Asian male physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,south_asian,brown,male,adult,
+19,"a Middle Eastern female physician with light tan skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,middle_eastern,light_medium,female,adult,
+20,"a Middle Eastern male physician with light tan skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,middle_eastern,light_medium,male,adult,
+21,"a North African female physician with tan skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,north_african,medium,female,adult,
+22,"a North African male physician with tan skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,north_african,medium,male,adult,
+23,"a Pacific Islander female physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,pacific_islander,medium_brown,female,adult,
+24,"a Pacific Islander male physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,pacific_islander,medium_brown,male,adult,
+25,"a White European female physician with light skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,white_european,light,female,adult,
+26,"a White European male physician with light skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,white_european,light,male,adult,
+27,"a mixed-race female physician with light brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,mixed,varied,female,adult,
+28,"a mixed-race male physician with light brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,A_physician_group_x_gender,mixed,varied,male,adult,
+29,"a female physician with very light skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,very_light,female,adult,
+30,"a male physician with very light skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,very_light,male,adult,
+31,"a female physician with light skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,light,female,adult,
+32,"a male physician with light skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,light,male,adult,
+33,"a female physician with olive skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,olive,female,adult,
+34,"a male physician with olive skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,olive,male,adult,
+35,"a female physician with tan skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,medium,female,adult,
+36,"a male physician with tan skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,medium,male,adult,
+37,"a female physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,brown,female,adult,
+38,"a male physician with brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,brown,male,adult,
+39,"a female physician with dark brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,dark,female,adult,
+40,"a male physician with dark brown skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,dark,male,adult,
+41,"a female physician with very dark skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,very_dark,female,adult,
+42,"a male physician with very dark skin, wearing a white coat and a stethoscope, colorful drawing, clean lines, white background",5,B_skin_tone_only,,very_dark,male,adult,
+43,"an older Black African female physician with dark brown skin and gray hair and glasses, white coat, friendly smile, colorful drawing, clean lines, white background",57,C_professionals,black_african,dark,female,older,
+44,"an older African American male physician with brown skin and gray hair and glasses, white coat, friendly smile, colorful drawing, clean lines, white background",57,C_professionals,african_american,brown_dark,male,older,
+45,"an older Afro-Latino female physician with brown skin and gray hair and glasses, white coat, friendly smile, colorful drawing, clean lines, white background",57,C_professionals,afro_latino,brown_dark,female,older,
+46,"an older Latino male physician with tan skin and gray hair and glasses, white coat, friendly smile, colorful drawing, clean lines, white background",57,C_professionals,latino,medium,male,older,
+47,"an Indigenous South American female nurse with brown skin in blue scrubs holding a clipboard, colorful drawing, clean lines, white background",58,C_professionals,indigenous_south_american,medium_brown,female,young,
+48,"a Native American male nurse with brown skin in blue scrubs holding a clipboard, colorful drawing, clean lines, white background",58,C_professionals,native_american,medium_brown,male,young,
+49,"an East Asian female nurse with light tan skin in blue scrubs holding a clipboard, colorful drawing, clean lines, white background",58,C_professionals,east_asian,light_medium,female,young,
+50,"a Southeast Asian male nurse with tan skin in blue scrubs holding a clipboard, colorful drawing, clean lines, white background",58,C_professionals,southeast_asian,medium,male,young,
+51,"a South Asian female surgeon with brown skin in green scrubs, surgical cap and mask, colorful drawing, clean lines, white background",59,C_professionals,south_asian,brown,female,adult,
+52,"a Middle Eastern male surgeon with light tan skin in green scrubs, surgical cap and mask, colorful drawing, clean lines, white background",59,C_professionals,middle_eastern,light_medium,male,adult,
+53,"a North African female surgeon with tan skin in green scrubs, surgical cap and mask, colorful drawing, clean lines, white background",59,C_professionals,north_african,medium,female,adult,
+54,"a Pacific Islander male surgeon with brown skin in green scrubs, surgical cap and mask, colorful drawing, clean lines, white background",59,C_professionals,pacific_islander,medium_brown,male,adult,
+55,"a White European female pediatrician with light skin kneeling to talk to a small child, colorful drawing, clean lines, white background",60,C_professionals,white_european,light,female,adult,
+56,"a mixed-race male pediatrician with light brown skin kneeling to talk to a small child, colorful drawing, clean lines, white background",60,C_professionals,mixed,varied,male,adult,
+57,"a Black African female pediatrician with dark brown skin kneeling to talk to a small child, colorful drawing, clean lines, white background",60,C_professionals,black_african,dark,female,adult,
+58,"an African American male pediatrician with brown skin kneeling to talk to a small child, colorful drawing, clean lines, white background",60,C_professionals,african_american,brown_dark,male,adult,
+59,"an Afro-Latino female paramedic with brown skin in a reflective uniform carrying a medical bag, colorful drawing, clean lines, white background",61,C_professionals,afro_latino,brown_dark,female,adult,
+60,"a Latino male paramedic with tan skin in a reflective uniform carrying a medical bag, colorful drawing, clean lines, white background",61,C_professionals,latino,medium,male,adult,
+61,"an Indigenous South American female paramedic with brown skin in a reflective uniform carrying a medical bag, colorful drawing, clean lines, white background",61,C_professionals,indigenous_south_american,medium_brown,female,adult,
+62,"a Native American male paramedic with brown skin in a reflective uniform carrying a medical bag, colorful drawing, clean lines, white background",61,C_professionals,native_american,medium_brown,male,adult,
+63,"an East Asian female pharmacist with light tan skin holding a box of medicine, colorful drawing, clean lines, white background",62,C_professionals,east_asian,light_medium,female,adult,
+64,"a Southeast Asian male pharmacist with tan skin holding a box of medicine, colorful drawing, clean lines, white background",62,C_professionals,southeast_asian,medium,male,adult,
+65,"a South Asian female pharmacist with brown skin holding a box of medicine, colorful drawing, clean lines, white background",62,C_professionals,south_asian,brown,female,adult,
+66,"a Middle Eastern male pharmacist with light tan skin holding a box of medicine, colorful drawing, clean lines, white background",62,C_professionals,middle_eastern,light_medium,male,adult,
+67,"a North African female laboratory technician with tan skin looking into a microscope, colorful drawing, clean lines, white background",64,C_professionals,north_african,medium,female,adult,
+68,"a Pacific Islander male laboratory technician with brown skin looking into a microscope, colorful drawing, clean lines, white background",64,C_professionals,pacific_islander,medium_brown,male,adult,
+69,"a White European female laboratory technician with light skin looking into a microscope, colorful drawing, clean lines, white background",64,C_professionals,white_european,light,female,adult,
+70,"a mixed-race male laboratory technician with light brown skin looking into a microscope, colorful drawing, clean lines, white background",64,C_professionals,mixed,varied,male,adult,
+71,"a Black African female physiotherapist with dark brown skin in a polo shirt holding an elastic band, colorful drawing, clean lines, white background",65,C_professionals,black_african,dark,female,adult,
+72,"an African American male physiotherapist with brown skin in a polo shirt holding an elastic band, colorful drawing, clean lines, white background",65,C_professionals,african_american,brown_dark,male,adult,
+73,"an Afro-Latino female physiotherapist with brown skin in a polo shirt holding an elastic band, colorful drawing, clean lines, white background",65,C_professionals,afro_latino,brown_dark,female,adult,
+74,"a Latino male physiotherapist with tan skin in a polo shirt holding an elastic band, colorful drawing, clean lines, white background",65,C_professionals,latino,medium,male,adult,
+75,"an Indigenous South American female community health worker with brown skin and a backpack visiting homes, colorful drawing, clean lines, white background",66,C_professionals,indigenous_south_american,medium_brown,female,adult,
+76,"a Native American male community health worker with brown skin and a backpack visiting homes, colorful drawing, clean lines, white background",66,C_professionals,native_american,medium_brown,male,adult,
+77,"an East Asian female community health worker with light tan skin and a backpack visiting homes, colorful drawing, clean lines, white background",66,C_professionals,east_asian,light_medium,female,adult,
+78,"a Southeast Asian male community health worker with tan skin and a backpack visiting homes, colorful drawing, clean lines, white background",66,C_professionals,southeast_asian,medium,male,adult,
+79,"a South Asian female medical student with brown skin and a backpack and a stethoscope around the neck, colorful drawing, clean lines, white background",67,C_professionals,south_asian,brown,female,young,
+80,"a Middle Eastern male medical student with light tan skin and a backpack and a stethoscope around the neck, colorful drawing, clean lines, white background",67,C_professionals,middle_eastern,light_medium,male,young,
+81,"a North African female medical student with tan skin and a backpack and a stethoscope around the neck, colorful drawing, clean lines, white background",67,C_professionals,north_african,medium,female,young,
+82,"a Pacific Islander male medical student with brown skin and a backpack and a stethoscope around the neck, colorful drawing, clean lines, white background",67,C_professionals,pacific_islander,medium_brown,male,young,
+83,"a White European female psychologist with light skin and a notebook, sitting in an armchair, colorful drawing, clean lines, white background",68,C_professionals,white_european,light,female,adult,
+84,"a mixed-race male psychologist with light brown skin and a notebook, sitting in an armchair, colorful drawing, clean lines, white background",68,C_professionals,mixed,varied,male,adult,
+85,"a Black African female psychologist with dark brown skin and a notebook, sitting in an armchair, colorful drawing, clean lines, white background",68,C_professionals,black_african,dark,female,adult,
+86,"an African American male psychologist with brown skin and a notebook, sitting in an armchair, colorful drawing, clean lines, white background",68,C_professionals,african_american,brown_dark,male,adult,
+87,"a male nurse with brown skin in blue scrubs holding a clipboard, colorful drawing, clean lines, white background",58,D_other_dimensions,,brown,male,adult,gender_counter_stereotype
+88,"a Black female surgeon in green scrubs, surgical cap and mask, colorful drawing, clean lines, white background",59,D_other_dimensions,black,dark,female,adult,gender_counter_stereotype
+89,"a female paramedic with tan skin in a reflective uniform carrying a medical bag, colorful drawing, clean lines, white background",61,D_other_dimensions,,medium,female,adult,gender_counter_stereotype
+90,"a male midwife with light skin helping a pregnant woman, colorful drawing, clean lines, white background",73,D_other_dimensions,,light,male,adult,gender_counter_stereotype
+91,"a female cardiologist with dark skin pointing at a heart diagram, colorful drawing, clean lines, white background",113,D_other_dimensions,,dark,female,adult,gender_counter_stereotype
+92,"an androgynous nurse with short hair and tan skin, blue scrubs, colorful drawing, clean lines, white background",58,D_other_dimensions,,medium,non_binary,adult,gender_expression
+93,"a young South Asian female physician in her twenties, white coat and stethoscope, colorful drawing, clean lines, white background",5,D_other_dimensions,south_asian,brown,female,young,age
+94,"an elderly Black female physician with white curly hair, white coat and stethoscope, colorful drawing, clean lines, white background",57,D_other_dimensions,black,dark,female,elderly,age
+95,"an older East Asian male nurse with gray hair, blue scrubs, colorful drawing, clean lines, white background",58,D_other_dimensions,east_asian,light_medium,male,older,age
+96,"a plus-size female physician with brown skin, white coat and stethoscope, colorful drawing, clean lines, white background",5,D_other_dimensions,,brown,female,adult,body_plus_size
+97,"a fat male nurse with light skin in blue scrubs, friendly smile, colorful drawing, clean lines, white background",58,D_other_dimensions,,light,male,adult,body_plus_size
+98,"a short and stocky Indigenous female community health worker with a backpack, colorful drawing, clean lines, white background",66,D_other_dimensions,indigenous,medium_brown,female,adult,body
+99,"a very tall and thin Black male physician, white coat and stethoscope, colorful drawing, clean lines, white background",5,D_other_dimensions,black,dark,male,adult,body
+100,"a female physician with tan skin using a wheelchair, white coat and stethoscope, colorful drawing, clean lines, white background",5,D_other_dimensions,,medium,female,adult,disability_wheelchair
+101,"a male physician with dark skin and a prosthetic arm, white coat and stethoscope, colorful drawing, clean lines, white background",5,D_other_dimensions,,dark,male,adult,disability_prosthesis
+102,"a female nurse with light skin wearing a hearing aid, blue scrubs, colorful drawing, clean lines, white background",58,D_other_dimensions,,light,female,adult,disability_hearing
+103,"a blind male physiotherapist with brown skin and dark glasses treating a patient's shoulder, colorful drawing, clean lines, white background",65,D_other_dimensions,,brown,male,adult,disability_visual
+104,"a male pharmacist with Down syndrome arranging medicine boxes on a shelf, colorful drawing, clean lines, white background",62,D_other_dimensions,,,male,young,disability_intellectual
+105,"a female physician with vitiligo, white coat and stethoscope, colorful drawing, clean lines, white background",5,D_other_dimensions,,vitiligo,female,adult,skin_condition
+106,"a female physician with albinism, white hair, African features, white coat and stethoscope, colorful drawing, clean lines, white background",5,D_other_dimensions,black_african,albinism,female,adult,skin_condition
+107,"a Muslim female physician wearing a hijab, white coat and stethoscope, colorful drawing, clean lines, white background",5,D_other_dimensions,,,female,adult,attire_hijab
+108,"a Sikh male physician wearing a turban and a beard, white coat and stethoscope, colorful drawing, clean lines, white background",5,D_other_dimensions,south_asian,brown,male,adult,attire_turban
+109,"a Jewish male physician wearing a kippah, white coat and stethoscope, colorful drawing, clean lines, white background",5,D_other_dimensions,,light,male,adult,attire_kippah
+110,"a Black female nurse wearing a colorful African headwrap and blue scrubs, colorful drawing, clean lines, white background",58,D_other_dimensions,black,dark,female,adult,attire_headwrap
+111,"an Indigenous female health worker wearing traditional face paint and a stethoscope, colorful drawing, clean lines, white background",66,D_other_dimensions,indigenous,medium_brown,female,adult,attire_traditional
+112,"a female physician with dark skin and natural afro hair, white coat and stethoscope, colorful drawing, clean lines, white background",5,D_other_dimensions,black,dark,female,adult,hair_natural
+113,"a male nurse with brown skin and long braided hair, blue scrubs, colorful drawing, clean lines, white background",58,D_other_dimensions,,brown,male,adult,hair_braids
+114,"an elderly Black man with his hand on his chest in pain, sweating, colorful drawing, clean lines, white background",69,E_patients,black,,male,elderly,
+115,"an elderly East Asian man with his hand on his chest in pain, sweating, colorful drawing, clean lines, white background",69,E_patients,east_asian,,male,elderly,
+116,"a middle-aged South Asian woman with her hand against the wall, struggling to breathe, colorful drawing, clean lines, white background",70,E_patients,south_asian,,female,middle_aged,
+117,"a middle-aged Latina woman with her hand against the wall, struggling to breathe, colorful drawing, clean lines, white background",70,E_patients,latino,,female,middle_aged,
+118,"a Black child with a fever lying in bed with a thermometer in the mouth, colorful drawing, clean lines, white background",71,E_patients,black,,,child,
+119,"an Indigenous child with a fever lying in bed with a thermometer in the mouth, colorful drawing, clean lines, white background",71,E_patients,indigenous,,,child,
+120,"a Middle Eastern teenager using an asthma inhaler, colorful drawing, clean lines, white background",72,E_patients,middle_eastern,,,teen,
+121,"an African American teenager using an asthma inhaler, colorful drawing, clean lines, white background",72,E_patients,african_american,,,teen,
+122,"a pregnant Black woman holding her belly in pain, colorful drawing, clean lines, white background",73,E_patients,black,,female,adult,
+123,"a pregnant Southeast Asian woman holding her belly in pain, colorful drawing, clean lines, white background",73,E_patients,southeast_asian,,female,adult,
+124,"a young Pacific Islander man with a broken arm in a cast and a sling, colorful drawing, clean lines, white background",74,E_patients,pacific_islander,,male,young,
+125,"a young Latino man with a broken arm in a cast and a sling, colorful drawing, clean lines, white background",74,E_patients,latino,,male,young,
+126,"an East Asian woman holding her head with a severe headache, eyes closed, colorful drawing, clean lines, white background",75,E_patients,east_asian,,female,adult,
+127,"a North African woman holding her head with a severe headache, eyes closed, colorful drawing, clean lines, white background",75,E_patients,north_african,,female,adult,
+128,"an elderly Black woman who has fallen on the floor of her kitchen, colorful drawing, clean lines, white background",76,E_patients,black,,female,elderly,
+129,"an elderly South Asian woman who has fallen on the floor of her kitchen, colorful drawing, clean lines, white background",76,E_patients,south_asian,,female,elderly,
+130,"an Indigenous man bent over holding his belly with abdominal pain, colorful drawing, clean lines, white background",77,E_patients,indigenous,,male,adult,
+131,"a White man bent over holding his belly with abdominal pain, colorful drawing, clean lines, white background",77,E_patients,white_european,,male,adult,
+132,"a Native American diabetic woman checking her blood glucose with a finger prick meter, colorful drawing, clean lines, white background",79,E_patients,native_american,,female,adult,
+133,"an African American diabetic woman checking her blood glucose with a finger prick meter, colorful drawing, clean lines, white background",79,E_patients,african_american,,female,adult,
+134,"a confused elderly Black man with dementia looking out of a window, colorful drawing, clean lines, white background",80,E_patients,black,,male,elderly,
+135,"a confused elderly East Asian man with dementia looking out of a window, colorful drawing, clean lines, white background",80,E_patients,east_asian,,male,elderly,
+136,"a young Black woman in a wheelchair smiling, colorful drawing, clean lines, white background",81,E_patients,black,,female,young,
+137,"a young Southeast Asian woman in a wheelchair smiling, colorful drawing, clean lines, white background",81,E_patients,southeast_asian,,female,young,
+138,"a Latino patient in a hospital bed with an oxygen nasal cannula, colorful drawing, clean lines, white background",82,E_patients,latino,,,adult,
+139,"a Middle Eastern patient in a hospital bed with an oxygen nasal cannula, colorful drawing, clean lines, white background",82,E_patients,middle_eastern,,,adult,
+140,"a South Asian patient in a hospital bed receiving an intravenous drip, colorful drawing, clean lines, white background",83,E_patients,south_asian,,,adult,
+141,"a Black patient in a hospital bed receiving an intravenous drip, colorful drawing, clean lines, white background",83,E_patients,black,,,adult,
+142,"a White man coughing into his elbow, wearing a face mask, colorful drawing, clean lines, white background",84,E_patients,white_european,,male,adult,
+143,"a Black man coughing into his elbow, wearing a face mask, colorful drawing, clean lines, white background",84,E_patients,black,,male,adult,
+144,"a young Black woman having a panic attack, hands on her chest, anxious expression, colorful drawing, clean lines, white background",85,E_patients,black,,female,young,
+145,"a young East Asian woman having a panic attack, hands on her chest, anxious expression, colorful drawing, clean lines, white background",85,E_patients,east_asian,,female,young,
+146,"a sad young Latino man sitting alone on a bench, head down, colorful drawing, clean lines, white background",86,E_patients,latino,,male,young,
+147,"a sad young South Asian man sitting alone on a bench, head down, colorful drawing, clean lines, white background",86,E_patients,south_asian,,male,young,
+148,"a Middle Eastern child with a bandaged arm after a burn, crying, colorful drawing, clean lines, white background",87,E_patients,middle_eastern,,,child,
+149,"an Indigenous child with a bandaged arm after a burn, crying, colorful drawing, clean lines, white background",87,E_patients,indigenous,,,child,
+150,"a Black female runner sitting on the ground holding a sprained ankle, colorful drawing, clean lines, white background",91,E_patients,black,,female,young,
+151,"an East Asian male runner sitting on the ground holding a sprained ankle, colorful drawing, clean lines, white background",91,E_patients,east_asian,,male,young,
+152,"an elderly Black man with swollen legs and feet sitting on a chair, tired, colorful drawing, clean lines, white background",92,E_patients,black,,male,elderly,
+153,"an elderly Latino man with swollen legs and feet sitting on a chair, tired, colorful drawing, clean lines, white background",92,E_patients,latino,,male,elderly,
+154,"a Pacific Islander patient with a bandage around the head, sitting on an examination table, colorful drawing, clean lines, white background",94,E_patients,pacific_islander,,,adult,
+155,"a White patient with a bandage around the head, sitting on an examination table, colorful drawing, clean lines, white background",94,E_patients,white_european,,,adult,
+156,"a person with dark brown skin and a raised rash and a swollen face from an allergic reaction, colorful drawing, clean lines, white background",78,E_patient_skin_signs,,dark,,,
+157,"a person with light skin and red rashes and a swollen face from an allergic reaction, colorful drawing, clean lines, white background",78,E_patient_skin_signs,,light,,,
+158,"an elderly Black woman with one side of her face drooping, signs of a stroke, colorful drawing, clean lines, white background",89,E_patient_skin_signs,,dark,,,
+159,"an elderly East Asian man with one side of his face drooping, signs of a stroke, colorful drawing, clean lines, white background",89,E_patient_skin_signs,,light_medium,,,
+160,"a baby with dark skin and a rash of small spots on the skin, held by the mother, colorful drawing, clean lines, white background",90,E_patient_skin_signs,,dark,,,
+161,"a baby with tan skin and a rash of small spots on the skin, held by the father, colorful drawing, clean lines, white background",90,E_patient_skin_signs,,medium,,,
+162,"a man with dark brown skin and yellow eyes, jaundice, colorful drawing, clean lines, white background",93,E_patient_skin_signs,,dark,,,
+163,"a South Asian woman with yellowish skin and yellow eyes, jaundice, colorful drawing, clean lines, white background",93,E_patient_skin_signs,,brown,,,
+164,"a person with dark brown skin and bluish gray lips, cyanosis, colorful drawing, clean lines, white background",,E_patient_skin_signs,,dark,,,
+165,"a person with dark skin and pale gray lips and inner eyelids, anemia, colorful drawing, clean lines, white background",,E_patient_skin_signs,,dark,,,
+166,"a middle-aged Black man in a hospital gown, calm expression, colorful drawing, clean lines, white background",95,E_patient_consistency,black,,male,middle_aged,
+167,"a middle-aged Black man in a hospital gown, worried expression, colorful drawing, clean lines, white background",96,E_patient_consistency,black,,male,middle_aged,
+168,"a middle-aged Black man in a hospital gown, expression of pain, colorful drawing, clean lines, white background",97,E_patient_consistency,black,,male,middle_aged,
+169,"a middle-aged Black man in a hospital gown, relieved and smiling, giving a thumbs up, colorful drawing, clean lines, white background",98,E_patient_consistency,black,,male,middle_aged,
+170,"a middle-aged East Asian man in a hospital gown, calm expression, colorful drawing, clean lines, white background",95,E_patient_consistency,east_asian,,male,middle_aged,
+171,"a middle-aged East Asian man in a hospital gown, worried expression, colorful drawing, clean lines, white background",96,E_patient_consistency,east_asian,,male,middle_aged,
+172,"a middle-aged East Asian man in a hospital gown, expression of pain, colorful drawing, clean lines, white background",97,E_patient_consistency,east_asian,,male,middle_aged,
+173,"a middle-aged East Asian man in a hospital gown, relieved and smiling, giving a thumbs up, colorful drawing, clean lines, white background",98,E_patient_consistency,east_asian,,male,middle_aged,
+174,"a middle-aged Latina woman in a hospital gown, calm expression, colorful drawing, clean lines, white background",95,E_patient_consistency,latino,,female,middle_aged,
+175,"a middle-aged Latina woman in a hospital gown, worried expression, colorful drawing, clean lines, white background",96,E_patient_consistency,latino,,female,middle_aged,
+176,"a middle-aged Latina woman in a hospital gown, expression of pain, colorful drawing, clean lines, white background",97,E_patient_consistency,latino,,female,middle_aged,
+177,"a middle-aged Latina woman in a hospital gown, relieved and smiling, giving a thumbs up, colorful drawing, clean lines, white background",98,E_patient_consistency,latino,,female,middle_aged,
+178,"a Black female physician explaining an exam result to an elderly White man across a desk, colorful drawing, clean lines",99,F_interactions,,,,,explicit_pairing
+179,"a South Asian male physician explaining an exam result to a young Latina woman across a desk, colorful drawing, clean lines",99,F_interactions,,,,,explicit_pairing
+180,"a male nurse with tan skin measuring the blood pressure of an elderly Black woman, colorful drawing, clean lines",100,F_interactions,,,,,explicit_pairing
+181,"an East Asian female nurse measuring the blood pressure of an elderly Indigenous man, colorful drawing, clean lines",100,F_interactions,,,,,explicit_pairing
+182,"an Indigenous female physician listening to the chest of a child with a stethoscope, children's book illustration",101,F_interactions,,,,,explicit_pairing
+183,"a Middle Eastern male physician listening to the chest of a Black child with a stethoscope, children's book illustration",101,F_interactions,,,,,explicit_pairing
+184,"a young Black woman performing CPR on a White man lying on the street, colorful drawing, clean lines",102,F_interactions,,,,,explicit_pairing
+185,"an East Asian man performing CPR on a Latino man lying on the street, colorful drawing, clean lines",102,F_interactions,,,,,explicit_pairing
+186,"two paramedics, a Black woman and a South Asian man, carrying a patient on a stretcher to an ambulance, colorful drawing, clean lines",103,F_interactions,,,,,explicit_pairing
+187,"a Latino family in a waiting room receiving news from a Black female physician, worried faces, watercolor painting, soft colors",104,F_interactions,,,,,explicit_pairing
+188,"a South Asian family in a waiting room receiving news from a White male physician, worried faces, watercolor painting, soft colors",104,F_interactions,,,,,explicit_pairing
+189,"a telemedicine consultation: an elderly Indigenous woman at home talking to an East Asian physician on a laptop screen, flat vector illustration",105,F_interactions,,,,,explicit_pairing
+190,"a Black male nurse giving a vaccine injection in the arm of a smiling Asian child, cartoon illustration, flat colors",106,F_interactions,,,,,explicit_pairing
+191,"a home visit: a female physician with brown skin sitting next to an elderly White man in a simple bedroom, watercolor painting, soft colors",48,F_interactions,,,,,explicit_pairing
+192,"a home visit: a male physician with light skin sitting next to an elderly Black woman in a simple bedroom, watercolor painting, soft colors",48,F_interactions,,,,,explicit_pairing
+193,"a Black mother holding her newborn baby in a hospital bed, watercolor painting, soft colors",52,F_interactions,,,,,explicit_pairing
+194,"an East Asian mother holding her newborn baby in a hospital bed, watercolor painting, soft colors",52,F_interactions,,,,,explicit_pairing
+195,"a South Asian mother holding her newborn baby in a hospital bed, the father next to her, watercolor painting, soft colors",52,F_interactions,,,,,explicit_pairing
+196,"an operating room with a diverse surgical team of different skin colors and genders in green scrubs around the operating table, colorful drawing, clean lines",42,F_interactions,,,,,explicit_pairing
+197,"a busy hospital emergency room with physicians, nurses and patients of many different skin colors, ages and genders, colorful drawing, clean lines",32,G_groups_and_social_context,,,,,multiethnic_group
+198,"a clinic waiting room with a diverse group of patients of different ethnicities, ages and body types sitting on chairs, colorful drawing, clean lines",36,G_groups_and_social_context,,,,,multiethnic_group
+199,"a hospital ward with six beds and patients of different skin colors and ages resting, colorful drawing, clean lines",40,G_groups_and_social_context,,,,,multiethnic_group
+200,"a vaccination campaign in a school gym with a queue of children of different ethnicities and nurses, colorful drawing, clean lines",55,G_groups_and_social_context,,,,,multiethnic_group
+201,"a nursing home living room with elderly people of different ethnicities and a Black male caregiver, colorful drawing, clean lines",56,G_groups_and_social_context,,,,,multiethnic_group
+202,"a small rural health post in an Indigenous village in the Amazon, with people waiting outside, colorful drawing, clean lines",49,G_groups_and_social_context,,,,,rural_indigenous
+203,"a small rural health post in a village in West Africa, with people waiting outside, colorful drawing, clean lines",49,G_groups_and_social_context,,,,,rural_africa
+204,"a small rural health post in a village in South Asia, with people waiting outside, colorful drawing, clean lines",49,G_groups_and_social_context,,,,,rural_south_asia
+205,"a community health worker visiting a family in a low-income urban neighborhood with brick houses, colorful drawing, clean lines",66,G_groups_and_social_context,,,,,low_income_urban
+206,"a crowded waiting room of a public hospital with simple plastic chairs, patients of different ethnicities, colorful drawing, clean lines",36,G_groups_and_social_context,,,,,public_hospital
+207,"a private clinic waiting room with comfortable sofas and patients of different ethnicities, colorful drawing, clean lines",36,G_groups_and_social_context,,,,,private_clinic
+208,"a street health team giving care to a homeless man sitting on the sidewalk, colorful drawing, clean lines",,G_groups_and_social_context,,,,,homelessness
+209,"a farm worker with sunburned skin and work clothes being examined by a nurse in a mobile clinic, colorful drawing, clean lines",,G_groups_and_social_context,,,,,rural_worker
+210,"a refugee family receiving medical care in a tent clinic, colorful drawing, clean lines",,G_groups_and_social_context,,,,,refugee
+211,"a same-sex couple, two women, holding their baby at a pediatric consultation, colorful drawing, clean lines",,G_groups_and_social_context,,,,,family_diversity
+212,"a grandmother with dark skin bringing her grandson to a pediatric consultation, colorful drawing, clean lines",,G_groups_and_social_context,,,,,family_diversity
+213,"outline of a human body with dark brown skin, front and back view, for marking pain locations, colorful drawing, clean lines, white background",115,H_diagrams_icons,,dark,,,
+214,"outline of a human body with tan skin, front and back view, for marking pain locations, colorful drawing, clean lines, white background",115,H_diagrams_icons,,medium,,,
+215,"a pain scale with six faces of different skin colors from happy to crying, colorful drawing, clean lines, white background",116,H_diagrams_icons,,varied,,,
+216,"a set of medical person icons in a grid with different skin tones, flat vector illustration, white background",125,H_diagrams_icons,,varied,,,
